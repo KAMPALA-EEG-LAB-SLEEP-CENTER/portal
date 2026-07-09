@@ -98,18 +98,7 @@ function Footer() {
             reserved.
           </p>
           <div className="flex gap-6">
-            <a
-              href="#"
-              className="text-xs text-gray-400 hover:text-[#0D9488] transition-colors"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="text-xs text-gray-400 hover:text-[#0D9488] transition-colors"
-            >
-              Terms of Service
-            </a>
+            
           </div>
         </div>
       </div>
