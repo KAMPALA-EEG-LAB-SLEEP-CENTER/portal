@@ -234,21 +234,44 @@ function BookAppointment() {
         `${import.meta.env.VITE_API_URL}/appointments`,
         {
           method: "POST",
-          // No Content-Type header here — the browser sets the correct
-          // multipart/form-data boundary automatically for FormData bodies.
           body: payload,
         },
       );
 
       if (!response.ok) {
-        throw new Error("Failed to submit appointment");
+        let message =
+          "Something went wrong submitting your appointment. Please try again or contact us directly.";
+
+        try {
+          const data = await response.json();
+          if (typeof data.message === "string") {
+            message = data.message;
+          } else if (Array.isArray(data.message)) {
+            // class-validator sometimes returns an array of messages
+            message = data.message[0];
+          }
+        } catch {
+          // Response body wasn't JSON — fall back to the generic message above
+        }
+
+        // If the backend rejected the file specifically, show it inline
+        // next to the upload field instead of a disruptive alert.
+        if (response.status === 400 && /file/i.test(message)) {
+          setErrors((prev) => ({ ...prev, referralFile: message }));
+          setStep(2); // make sure the user is on the step where they can see it
+          return;
+        }
+
+        throw new Error(message);
       }
 
       setShowSuccess(true);
     } catch (error) {
       console.error(error);
       alert(
-        "Something went wrong submitting your appointment. Please try again or contact us directly.",
+        error instanceof Error
+          ? error.message
+          : "Something went wrong submitting your appointment. Please try again or contact us directly.",
       );
     } finally {
       setIsSubmitting(false);
