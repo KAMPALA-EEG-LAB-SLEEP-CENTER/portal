@@ -1,4 +1,4 @@
-import { HeartPulse, Zap, Moon, BrainCircuit, Baby, ArrowRight } from 'lucide-react';
+import { HeartPulse, Zap, Moon, BrainCircuit, Baby} from 'lucide-react';
 
 function Services() {
   return (
