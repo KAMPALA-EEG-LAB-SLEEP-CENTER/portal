@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import expertCareImage from "../assets/expert-care.jpg";
 import {
   ArrowRight,
   ArrowLeft,
@@ -673,7 +674,7 @@ function BookAppointment() {
               {step < 2 && (
                 <div className="relative rounded-2xl overflow-hidden h-56">
                   <img
-                    src="/src/assets/expert-care.jpg"
+                    src={expertCareImage}
                     alt="Doctor at her desk"
                     className="w-full h-full object-cover"
                   />
