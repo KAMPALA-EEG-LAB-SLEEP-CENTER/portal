@@ -2,17 +2,17 @@ import { MapPin, Phone, Clock } from 'lucide-react';
 import logo from "../assets/logo.png";
 
 const quickLinks = [
-  { label: 'Home', href: '#home' },
-  // { label: 'About Us', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'FAQs', href: '#faqs' },
+  { label: "Home", href: "/#home" },
+  // { label: 'About Us', href: '/#about' },
+  { label: "Services", href: "/#services" },
+  { label: "FAQs", href: "/#faqs" },
 ];
 
 const serviceLinks = [
-  { label: 'Depression Tests', href: '#services' },
-  { label: 'Seizure Monitoring', href: '#services' },
-  { label: 'Sleep Analysis', href: '#services' },
-  { label: 'Stroke Evaluation', href: '#services' },
+  { label: "Depression Tests", href: "/#services" },
+  { label: "Seizure Monitoring", href: "/#services" },
+  { label: "Sleep Analysis", href: "/#services" },
+  { label: "Stroke Evaluation", href: "/#services" },
 ];
 
 function Footer() {
