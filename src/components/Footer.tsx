@@ -1,5 +1,6 @@
 import { MapPin, Phone, Clock } from 'lucide-react';
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const quickLinks = [
   { label: "Home", href: "/#home" },
@@ -98,7 +99,12 @@ function Footer() {
             reserved.
           </p>
           <div className="flex gap-6">
-            
+            <Link
+              to="/privacy-policy"
+              className="text-xs text-gray-400 hover:text-[#0D9488] transition-colors"
+            >
+              Privacy Policy
+            </Link>
           </div>
         </div>
       </div>

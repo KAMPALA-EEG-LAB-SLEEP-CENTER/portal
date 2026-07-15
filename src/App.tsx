@@ -4,6 +4,7 @@ import BookAppointment from './pages/BookAppointment';
 import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/book" element={<BookAppointment />} />
       <Route path="/admin" element={<AdminLogin />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route
         path="/admin/dashboard"
         element={
