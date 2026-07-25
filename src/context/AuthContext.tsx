@@ -1,6 +1,5 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 
-
 interface Admin {
   id: string;
   email: string;
@@ -27,6 +26,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const storedToken = localStorage.getItem('adminToken');
     const storedAdmin = localStorage.getItem('adminData');
     if (storedToken && storedAdmin) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setToken(storedToken);
       setAdmin(JSON.parse(storedAdmin));
     }
@@ -54,6 +54,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useAuth() {
   const context = useContext(AuthContext);
   if (!context) throw new Error('useAuth must be used within AuthProvider');

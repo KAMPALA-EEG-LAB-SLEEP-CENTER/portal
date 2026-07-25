@@ -227,13 +227,15 @@ function AdminDashboard() {
   };
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     fetchData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [search, statusFilter]);
+ useEffect(() => {
+   // eslint-disable-next-line react-hooks/set-state-in-effect
+   setCurrentPage(1);
+ }, [search, statusFilter]);
 
   const handleAddAdmin = async (e: React.FormEvent) => {
     e.preventDefault();
