@@ -266,12 +266,12 @@ function BookAppointment() {
         throw new Error(message);
       }
 
-     if (typeof window.gtag === "function") {
-       window.gtag("event", "conversion", {
-         send_to: "AW-18243400850/XXXXXXXXXXXX", // replace with the real conversion label from Google Ads
-       });
-     }
-     setShowSuccess(true);
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "conversion", {
+        send_to: "AW-18243400850/wCD5CNeQldccEJLpkPtD",
+      });
+    }
+    setShowSuccess(true);
     } catch (error) {
       console.error(error);
       alert(
