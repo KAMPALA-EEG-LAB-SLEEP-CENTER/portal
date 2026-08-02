@@ -10,7 +10,6 @@ import {
   Users,
   Shield,
   Phone,
-  MessageSquare,
   Activity,
   Moon,
   Brain,
@@ -766,18 +765,7 @@ function BookAppointment() {
                     <p className="text-sm font-semibold">+256 751 943 706</p>
                   </div>
                 </a>
-                <a
-                  href="https://wa.me/256751943706"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 bg-[#0D9488] rounded-lg px-4 py-3 hover:bg-[#0B7C71] transition-colors"
-                >
-                  <MessageSquare className="w-4 h-4" />
-                  <div>
-                    <p className="text-xs text-teal-50">WhatsApp Support</p>
-                    <p className="text-sm font-semibold">Message Support</p>
-                  </div>
-                </a>
+                
               </div>
 
               <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center">
