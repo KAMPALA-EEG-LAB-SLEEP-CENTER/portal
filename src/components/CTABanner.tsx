@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Calendar, MessageCircle } from 'lucide-react';
+import { Calendar  } from 'lucide-react';
 
 function CTABanner() {
   return (
@@ -16,10 +16,7 @@ function CTABanner() {
             Book Test Now
             <Calendar className="w-4 h-4" />
           </Link>
-          <a href="https://wa.me/256751943706" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 border border-white/20 text-white text-sm font-medium px-6 py-3 rounded-lg hover:bg-white/5 transition-colors">
-            WhatsApp Us
-            <MessageCircle className="w-4 h-4" />
-          </a>
+         
         </div>
       </div>
     </section>
