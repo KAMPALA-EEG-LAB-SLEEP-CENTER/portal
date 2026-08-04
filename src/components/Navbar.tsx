@@ -38,6 +38,11 @@ return (
             </a>
           </li>
         ))}
+        <li>
+          <Link to="/blog" className="hover:text-[#0D9488] transition-colors">
+            Blog
+          </Link>
+        </li>
       </ul>
 
       <div className="hidden md:flex items-center gap-6">
