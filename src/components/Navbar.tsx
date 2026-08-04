@@ -40,7 +40,7 @@ return (
         ))}
         <li>
           <Link to="/blog" className="hover:text-[#0D9488] transition-colors">
-            Blog
+            Our Blog
           </Link>
         </li>
       </ul>
