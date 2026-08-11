@@ -2,6 +2,9 @@ import headacheHeroImage from "../assets//Head.jpg";
 import anxietyImage from "../assets//Anxiety.jpg";
 import DepressionImage from "../assets//Depression.jpg";
 import epilepsyandseizureImage from "../assets//epilepsy and seizure.jpg";
+// import anxietyHeroImage from "../assets/blog-anxiety-hero.jpg";
+// import depressionHeroImage from "../assets/blog-depression-hero.jpg";
+// import epilepsyHeroImage from "../assets/blog-epilepsy-hero.jpg";
 
 // portal/src/assets/headaches.jpg
 // blog - headache - hero.jpg;
@@ -12,6 +15,7 @@ export interface BlogPost {
   excerpt: string;
   date: string;
   image?: string;
+  category: string;
   content: { heading?: string; paragraphs: string[]; list?: string[]; image?: string }[];
 }
 
@@ -23,6 +27,7 @@ export const blogPosts: BlogPost[] = [
       "Headaches are one of the most common complaints we see, but the cause behind them can vary widely. Here's a breakdown of what could be causing your headache, how it can be tested for, and how it can be managed.",
     date: "August 4, 2026",
     image: headacheHeroImage,
+    category: "Neurology",
     content: [
       {
         paragraphs: [
@@ -90,6 +95,7 @@ export const blogPosts: BlogPost[] = [
       "Occasional anxiety is a normal part of life, but for some people worry and fear become intense, persistent, and hard to control. Here is what to know about anxiety disorders, their symptoms, and when to see a doctor.",
     date: "August 4, 2026",
     image: anxietyImage,
+    category: "Mental Health",
     content: [
       {
         paragraphs: [
@@ -193,6 +199,7 @@ export const blogPosts: BlogPost[] = [
       "Depression is more than a passing bout of sadness. Here is what causes it, how it presents differently across age groups, and what can be done to manage and prevent it.",
     date: "August 4, 2026",
     image: DepressionImage,
+    category: "Mental Health",
     content: [
       {
         paragraphs: [
@@ -303,6 +310,7 @@ export const blogPosts: BlogPost[] = [
       'Epilepsy is one of the most common neurological disorders worldwide, affecting an estimated 50 million people. But "epilepsy" is not one condition — it covers many distinct syndromes, each with its own pattern, prognosis, and treatment approach.',
     date: "August 4, 2026",
     image: epilepsyandseizureImage,
+    category: "Neurology",
     content: [
       {
         paragraphs: [
@@ -512,3 +520,21 @@ export const blogPosts: BlogPost[] = [
     ],
   },
 ];
+
+export function getRecentPosts(excludeSlug: string, count: number): BlogPost[] {
+  return blogPosts.filter((p) => p.slug !== excludeSlug).slice(0, count);
+}
+
+export function getRelatedPosts(category: string, excludeSlug: string, count: number): BlogPost[] {
+  return blogPosts
+    .filter((p) => p.category === category && p.slug !== excludeSlug)
+    .slice(0, count);
+}
+
+export function getCategories(): { name: string; count: number }[] {
+  const counts: Record<string, number> = {};
+  blogPosts.forEach((p) => {
+    counts[p.category] = (counts[p.category] ?? 0) + 1;
+  });
+  return Object.entries(counts).map(([name, count]) => ({ name, count }));
+}
