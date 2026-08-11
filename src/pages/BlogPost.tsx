@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { ArrowLeft, Calendar, Share2, Link2 } from 'lucide-react';
+import { ArrowLeft, Calendar, Link2 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { blogPosts, getCategories, getRecentPosts, getRelatedPosts } from '../data/blogPosts';
