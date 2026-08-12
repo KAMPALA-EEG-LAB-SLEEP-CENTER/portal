@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Menu, X } from 'lucide-react';
 import logo from "../assets/logo.png";
+import { trackConversion, CONVERSION_LABELS } from "../lib/gtag";
 
 const navLinks = [
   { label: "Home", href: "/#home" },
@@ -48,6 +49,7 @@ return (
       <div className="hidden md:flex items-center gap-6">
         <a
           href="tel:+256751943706"
+          onClick={() => trackConversion(CONVERSION_LABELS.CONTACT)}
           className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-[#0D9488] transition-colors"
         >
           <Phone className="w-4 h-4" />

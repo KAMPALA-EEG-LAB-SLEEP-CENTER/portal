@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import expertCareImage from "../assets/expert-care.jpg";
+import { trackConversion, CONVERSION_LABELS } from "../lib/gtag";
 import {
   ArrowRight,
   ArrowLeft,
@@ -265,11 +266,7 @@ function BookAppointment() {
         throw new Error(message);
       }
 
-    if (typeof window.gtag === "function") {
-      window.gtag("event", "conversion", {
-        send_to: "AW-18243400850/wCD5CNeQldccEJLpkPtD",
-      });
-    }
+    trackConversion(CONVERSION_LABELS.BOOKING);
     setShowSuccess(true);
     } catch (error) {
       console.error(error);
