@@ -19,7 +19,7 @@ function Blog() {
     <>
       <Navbar />
       <section className="bg-gray-50 py-16">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="inline-block bg-teal-50 text-[#0D9488] text-xs font-semibold px-4 py-1.5 rounded-full mb-5">
               Brain Health Insights
@@ -48,7 +48,7 @@ function Blog() {
             ))}
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredPosts.map((post) => (
               <Link
                 key={post.slug}
