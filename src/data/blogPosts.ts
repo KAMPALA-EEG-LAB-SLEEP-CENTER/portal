@@ -3,6 +3,9 @@ import anxietyImage from "../assets/Anxiety.jpg";
 import DepressionImage from "../assets/Depression.jpg";
 import epilepsyandseizureImage from "../assets/epilepsy and seizure.jpg";
 import sleepImage from "../assets/Sleep.jpg";
+import ClusterImage from "../assets/ClusterHeadaches.jpg";
+import BloodpatchImage from "../assets/BloodPatch.jpg";
+import MythsImage from "../assets/Myths.jpg";
 
 export interface BlogPost {
   slug: string;
@@ -614,6 +617,236 @@ export const blogPosts: BlogPost[] = [
         heading: "In Summary",
         paragraphs: [
           "Epilepsy is not a single condition but a broad category covering many distinct syndromes, each with its own age of onset, seizure pattern, EEG signature, and prognosis. Accurate diagnosis — often supported by EEG and, where needed, imaging or genetic testing — is essential for choosing the right treatment approach and understanding what to expect. If you or a loved one are experiencing recurrent seizures, a proper evaluation is the first step toward effective management.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "cluster-headaches-and-migraines",
+    title: "Cluster Headaches and Migraines: Understanding Two Distinct Headache Types",
+    excerpt:
+      "Not all headaches are the same. Cluster headaches and migraines are two distinct, often severe conditions with their own patterns, triggers, and treatments. Here's how to tell them apart.",
+    date: "August 4, 2026",
+    category: "Neurology",
+    image: ClusterImage,
+    content: [
+      {
+        heading: "Cluster Headaches",
+        paragraphs: [
+          "Cluster headaches are rare, extremely severe, one-sided headaches that strike in groups. Pain is severe around one eye and lasts 15 minutes to an hour.",
+        ],
+      },
+      {
+        heading: "Symptoms of Cluster Headaches",
+        paragraphs: [],
+        list: [
+          "Sharp, burning, or piercing pain on one side of the head, usually behind or around one eye",
+          "A red or watering eye on the painful side",
+          "Stuffy or runny nose on the same side",
+          "Drooping eyelid or sweating on the face",
+          "Extreme restlessness or pacing (unlike migraines, which make you want to lie down)",
+        ],
+      },
+      {
+        heading: "Common Triggers for Cluster Headaches",
+        paragraphs: [],
+        list: [
+          "Drinking alcohol during an active cluster period",
+          "Smoking or tobacco use",
+          "Strong smells, like perfumes or chemical fumes",
+          "Bright lights",
+          "Changes in sleep patterns",
+        ],
+      },
+      {
+        heading: "How to Relieve Pain from Cluster Headaches",
+        paragraphs: [
+          "Standard over-the-counter pain pills do not work for an acute cluster headache attack because the attacks are too fast and severe. Fast-acting medical treatments include breathing 100% pure oxygen through a face mask, and fast-acting triptan nasal sprays or injections can also help.",
+        ],
+      },
+      {
+        heading: "Migraines",
+        paragraphs: [
+          "Migraines are more than just a bad headache, they are a neurological condition.",
+        ],
+      },
+      {
+        heading: "What a Migraine Usually Feels Like",
+        paragraphs: [
+          "Moderate to severe throbbing pain, often on one side, lasting 4 hours to 3 days if untreated.",
+        ],
+      },
+      {
+        heading: "Symptoms",
+        paragraphs: [],
+        list: ["Nausea and vomiting", "Sensitivity to light"],
+      },
+      {
+        heading: "Common Triggers and Causes",
+        paragraphs: [],
+        list: [
+          "Hormonal changes",
+          "Stress and poor sleep",
+          "Skipped meals, dehydration, caffeine",
+          "Bright light",
+        ],
+      },
+      {
+        heading: "Pre-Symptoms",
+        paragraphs: ["One or two days before a migraine, you may experience:"],
+        list: ["Constipation", "Food cravings", "Neck stiffness", "Increased urination"],
+      },
+      {
+        heading: "Aura",
+        paragraphs: ["An aura might occur before or during an episode in some people. Examples include:"],
+        list: [
+          "Vision loss",
+          "Visual changes such as seeing flashes of light, shapes, etc.",
+          "A feeling of pins or needles in the limbs",
+        ],
+      },
+      {
+        heading: "During a Migraine",
+        paragraphs: [],
+        list: [
+          "Pain that's usually on one side of the head, or sometimes both sides",
+          "Throbbing pain",
+          "Sensitivity to light and sound",
+        ],
+      },
+      {
+        heading: "After a Migraine",
+        paragraphs: ["You may feel drained, confused, and tired."],
+      },
+      {
+        heading: "When to See a Doctor",
+        paragraphs: [
+          "Migraines are often underdiagnosed and undertreated. If symptoms persist and become severe, medication may be prescribed. See your doctor immediately if you:",
+        ],
+        list: [
+          "Get an abrupt, severe, persistent headache",
+          "Have a headache with confusion, chills, neck stiffness, etc.",
+          "Have a chronic headache that worsens with straining or movement",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "epidural-blood-patch-explained",
+    title: "Epidural Blood Patch: What It Is and How It's Done",
+    excerpt:
+      "An epidural blood patch is a procedure used to treat headaches caused by spinal fluid leaks. Here's what the procedure involves, who it's for, and what to expect.",
+    date: "August 4, 2026",
+    category: "Neurology",
+    image: BloodpatchImage,
+    content: [
+      {
+        paragraphs: [
+          "An epidural blood patch is a procedure that uses an injection of your own blood to stop cerebrospinal fluid (CSF) leakage near your spinal cord.",
+        ],
+      },
+      {
+        heading: "What Does the Procedure Do?",
+        paragraphs: ["The procedure has two functions:"],
+        list: [
+          "To seal the punctured site by forming a blood clot",
+          "To reduce low CSF pressure",
+        ],
+      },
+      {
+        heading: "Who Needs an Epidural Blood Patch?",
+        paragraphs: [
+          "It may be recommended if you develop a headache due to spinal issues and conservative treatment has not worked. Conservative treatment includes:",
+        ],
+        list: ["Bed rest", "Hydrating", "NSAIDs", "Oral caffeine"],
+      },
+      {
+        heading: "The Procedure",
+        paragraphs: [],
+        list: [
+          "You will lie on your side or in a sitting-up position",
+          "A healthcare provider disinfects the spinal area where the injection will take place, as well as the area where the blood sample will be drawn",
+          "Local anaesthesia may be given",
+          "An IV catheter with a needle is inserted into a blood vessel to withdraw your blood sample",
+          "The needle is then inserted into the epidural space near your spinal cord",
+          "A provider collects a sample of your blood through the IV catheter",
+          "The blood sample is slowly injected into the epidural space over 30–60 seconds",
+          "You will likely feel some discomfort in the area as the procedure happens",
+        ],
+      },
+      {
+        heading: "Possible Complications",
+        paragraphs: [],
+        list: [
+          "Failure to treat the headache",
+          "Worsening of the headache",
+          "Infection at the site",
+        ],
+      },
+      {
+        heading: "Can a Spinal Headache Come Back After a Blood Patch?",
+        paragraphs: [
+          "Yes. Epidural blood patch procedures aren't always successful, and in some patients the headache can relapse after the procedure, though this is unlikely.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "myths-and-misconceptions-about-epilepsy",
+    title: "Myths and Misconceptions About Epilepsy",
+    excerpt:
+      "Epilepsy is surrounded by misunderstanding, and these myths can lead to stigma and delayed treatment. Here are eight common misconceptions about epilepsy — and the facts behind them.",
+    date: "August 4, 2026",
+    category: "Neurology",
+    image: MythsImage,
+    content: [
+      {
+        heading: "Myth 1: Epilepsy is contagious.",
+        paragraphs: [
+          "Fact: False. Epilepsy is not contagious and cannot be acquired through saliva, touch, or staying with someone who has epilepsy.",
+        ],
+      },
+      {
+        heading: "Myth 2: People with epilepsy are mentally ill.",
+        paragraphs: [
+          "Fact: Epilepsy is a neurological condition and is not classified as a mental illness. Most people with epilepsy have normal intelligence, though some patients with certain epilepsy types do experience mental health difficulties and behavioral challenges. Reduced mental ability is more closely associated with having frequent, uncontrolled seizures.",
+        ],
+      },
+      {
+        heading: "Myth 3: All seizures look like shaking on the ground.",
+        paragraphs: [
+          "Fact: No - there are many seizure types in epilepsy, broadly classified into observable (clinical) and non-observable (sub-clinical) seizures. Observable seizures can involve violent shaking on the ground with loss of consciousness, but can also appear as brief staring spells with full or partial loss of consciousness, sudden jerks, unusual sensations, or short episodes of confusion where the person does not fall. Sub-clinical seizures can only be detected on an EEG test.",
+        ],
+      },
+      {
+        heading: "Myth 4: Epilepsy means you have brain damage.",
+        paragraphs: [
+          "Fact: Partly true. Epilepsy can result from brain injuries, such as stroke, the after-effects of infections like malaria or herpes viruses, autoimmune diseases of the brain, or the after-effects of febrile seizures. However, some epilepsy types are genetic, such as a group called the idiopathic generalized epilepsies (IGEs). Abnormal brain development in the womb can also lead to conditions like cortical dysplasias, which cause epilepsy. In some cases, there is no known clear cause of epilepsy.",
+        ],
+      },
+      {
+        heading: "Myth 5: Epilepsy is caused by witchcraft or is spiritually related.",
+        paragraphs: [
+          "Fact: No. Epilepsy is not witchcraft. Epilepsy involves repeated, unprovoked seizures due to abnormal electrical activity in the brain.",
+        ],
+      },
+      {
+        heading: "Myth 6: Flashing lights trigger all epilepsies.",
+        paragraphs: [
+          "Fact: Only about 3–5% of people with epilepsy have photosensitive epilepsy, and photosensitive epilepsies are mainly found within the idiopathic generalized epilepsy (IGE) group. In almost all other epilepsy groups and subtypes, seizures are not triggered by light.",
+        ],
+      },
+      {
+        heading: "Myth 7: Putting something in someone's mouth stops a seizure.",
+        paragraphs: [
+          "Fact: False. Putting onions, garlic, or any other object in someone's mouth or nose does not stop a seizure. Since the active phase of most epileptic seizures is short (averaging less than 10 minutes), by the time a bystander manages to put something in the person's mouth, the seizure is usually already nearing its natural end, giving a false impression that the intervention worked.",
+        ],
+      },
+      {
+        heading: "Myth 8: Epilepsy is life-long.",
+        paragraphs: [
+          "Fact: Partly true, but not all epilepsies are life-long. Some, such as the benign epilepsies of infancy and childhood (like BECTS) and some idiopathic generalized epilepsies, can be outgrown. Even within this benign category, there is a possibility of the disorder becoming more severe if seizures are frequent, so prompt drug therapy is always recommended.",
+          "Some epilepsies can be completely cured with drug therapy, while others are drug-dependent, meaning seizures are well controlled while the patient is on medication, but can return if treatment stops. Some epilepsies do not respond to medication at all. In a small number of drug-resistant cases, surgical intervention is possible and can lead to complete remission of seizures, though surgery-related clinical deficits limit how widely this option is used. Currently, surgery is most commonly used in cases of drug-resistant unilateral temporal lobe epilepsy, where the related clinical deficits are minimal.",
         ],
       },
     ],
