@@ -1,5 +1,5 @@
-import { ArrowRight, Clock } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { ArrowRight, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "../assets/hero-doctor.jpg";
 
 function Hero() {
@@ -76,8 +76,6 @@ function Hero() {
           </div>
         </div>
       </div>
-
-      
     </section>
   );
 }

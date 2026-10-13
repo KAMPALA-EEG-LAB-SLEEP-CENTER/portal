@@ -349,7 +349,7 @@ function BookAppointment() {
                           onChange={(e) =>
                             updateField("fullName", e.target.value)
                           }
-                          placeholder="John Doe"
+                          placeholder="John Okello"
                           className={inputClass("fullName")}
                         />
                         {errors.fullName && (
@@ -416,7 +416,7 @@ function BookAppointment() {
                         type="email"
                         value={formData.email}
                         onChange={(e) => updateField("email", e.target.value)}
-                        placeholder="name@example.com"
+                        placeholder="name@gmail.com"
                         className={inputClass("email")}
                       />
                       {errors.email && (

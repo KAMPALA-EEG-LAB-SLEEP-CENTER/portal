@@ -14,4 +14,5 @@ export function trackConversion(
 
 export const CONVERSION_LABELS = {
   BOOKING: "AW-18243400850/wCD5CNeQldccEJLpkPtD",
+  CONTACT_2: "AW-18243400850/EnWSCNqAgJodEJLpkPtD",
 };
