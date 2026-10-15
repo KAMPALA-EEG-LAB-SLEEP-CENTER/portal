@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import expertCareImage from "../assets/expert-care.jpg";
+import { trackConversion, CONVERSION_LABELS } from "../lib/gtag"; // <-- adjust this path
 
 import {
   ArrowRight,
@@ -266,8 +267,9 @@ function BookAppointment() {
         throw new Error(message);
       }
 
-    
-    setShowSuccess(true);
+      trackConversion(CONVERSION_LABELS.BOOKING);
+      trackConversion(CONVERSION_LABELS.CONTACT_2);
+      setShowSuccess(true);
     } catch (error) {
       console.error(error);
       alert(
