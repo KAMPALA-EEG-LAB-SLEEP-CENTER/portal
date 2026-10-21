@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Menu, X } from 'lucide-react';
 import logo from "../assets/logo.png";
@@ -32,16 +32,16 @@ function Navbar() {
           ))}
           <li>
             <Link to="/blog" className="hover:text-[#0D9488] transition-colors">
-              Our Blog
+              Blog
             </Link>
           </li>
         </ul>
 
         <div className="hidden md:flex items-center gap-6">
-          <span className="flex items-center gap-2 text-sm font-medium text-gray-700">
+          <a href="tel:+256751943706" className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-[#0D9488] transition-colors">
             <Phone className="w-4 h-4" />
             +256 751-943-706
-          </span>
+          </a>
           <Link to="/book" className="bg-[#0D9488] text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-[#0B7C71] transition-colors">
             Book Now
           </Link>
@@ -62,10 +62,10 @@ function Navbar() {
           <Link to="/blog" className="text-sm font-medium text-gray-700" onClick={() => setIsMenuOpen(false)}>
             Blog
           </Link>
-          <span className="flex items-center gap-2 text-sm font-medium text-gray-700">
+          <a href="tel:+256751943706" className="flex items-center gap-2 text-sm font-medium text-gray-700">
             <Phone className="w-4 h-4" />
             +256 751-943-706
-          </span>
+          </a>
           <Link to="/book" className="bg-[#0D9488] text-white text-sm font-medium px-5 py-2.5 rounded-lg text-center" onClick={() => setIsMenuOpen(false)}>
             Book Now
           </Link>

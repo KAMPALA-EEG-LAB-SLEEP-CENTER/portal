@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import expertCareImage from "../assets/expert-care.jpg";
-import { trackConversion, CONVERSION_LABELS } from "../lib/gtag"; // <-- adjust this path
+import { trackConversion, CONVERSION_LABELS } from "../lib/gtag"; 
 
 import {
   ArrowRight,
@@ -754,13 +754,16 @@ function BookAppointment() {
                   Our team is available to answer any questions about the EEG
                   process or requirements.
                 </p>
-                <div className="flex items-center gap-3 bg-white/5 rounded-lg px-4 py-3 mb-3">
+                <a
+                  href="tel:+256751943706"
+                  className="flex items-center gap-3 bg-white/5 rounded-lg px-4 py-3 mb-3 hover:bg-white/10 transition-colors"
+                >
                   <Phone className="w-4 h-4 text-[#5EEAD4]" />
                   <div>
                     <p className="text-xs text-gray-400">Call Us Directly</p>
                     <p className="text-sm font-semibold">+256 751 943 706</p>
                   </div>
-                </div>
+                </a>
               </div>
 
               <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center">
